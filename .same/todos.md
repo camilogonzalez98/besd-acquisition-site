@@ -1,0 +1,6 @@
+- [ ] Create new brand logo options (real estate/investment)
+- [ ] Define color palette and typography
+- [ ] Draft homepage layout and persuasive copy
+- [ ] Set up navigation and base scaffold for Blog, Newsletter, Live Chat, Portfolio, Partners, About Us, Login/Signup, FAQ, Contact
+- [ ] Implement dark mode toggle
+- [ ] Add placeholders for blog, newsletter, live chat, portfolio, and partners sections
