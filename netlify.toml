@@ -1,0 +1,12 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
+
+[build]
+  command = "next build"
+  publish = "out"
+  functions = "netlify/functions"
+
+dev = "next dev -H 0.0.0.0"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
