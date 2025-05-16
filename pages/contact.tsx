@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 
 export default function Contact() {
@@ -10,11 +11,11 @@ export default function Contact() {
           <span className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-wide">BESD Acquisition</span>
         </div>
         <ul className="hidden md:flex gap-8 font-heading text-brand-navy text-base">
-          <li className="hover:text-brand-gold transition"><a href="/">Home</a></li>
-          <li className="hover:text-brand-gold transition"><a href="/about">About Us</a></li>
-          <li className="hover:text-brand-gold transition"><a href="/portfolio">Portfolio</a></li>
-          <li className="hover:text-brand-gold transition"><a href="/services">Services</a></li>
-          <li className="hover:text-brand-gold transition font-bold underline underline-offset-4"><a href="/contact">Contact</a></li>
+          <li className="hover:text-brand-gold transition"><Link href="/">Home</Link></li>
+          <li className="hover:text-brand-gold transition"><Link href="/about">About Us</Link></li>
+          <li className="hover:text-brand-gold transition"><Link href="/portfolio">Portfolio</Link></li>
+          <li className="hover:text-brand-gold transition"><Link href="/services">Services</Link></li>
+          <li className="hover:text-brand-gold transition font-bold underline underline-offset-4"><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>
       <section className="relative z-10 max-w-4xl mx-auto px-2 sm:px-4 md:px-8 pb-20 flex flex-col items-center">

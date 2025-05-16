@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Logo } from '@/components/Logo';
+import Link from 'next/link';
 
 const propertyTypes = [
   {
@@ -149,11 +150,21 @@ export default function Home() {
           <span className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-wide">BESD Acquisition</span>
         </div>
         <ul className="hidden md:flex gap-8 font-heading text-brand-navy text-base">
-          <li className="hover:text-brand-gold transition"><a href="#">Home</a></li>
-          <li className="hover:text-brand-gold transition"><a href="#">About Us</a></li>
-          <li className="hover:text-brand-gold transition"><a href="#">Portfolio</a></li>
-          <li className="hover:text-brand-gold transition"><a href="#">Services</a></li>
-          <li className="hover:text-brand-gold transition font-bold underline underline-offset-4"><a href="/contact">Contact</a></li>
+          <li className="hover:text-brand-gold transition">
+            <Link href="#">Home</Link>
+          </li>
+          <li className="hover:text-brand-gold transition">
+            <Link href="#">About Us</Link>
+          </li>
+          <li className="hover:text-brand-gold transition">
+            <Link href="#">Portfolio</Link>
+          </li>
+          <li className="hover:text-brand-gold transition">
+            <Link href="#">Services</Link>
+          </li>
+          <li className="hover:text-brand-gold transition font-bold underline underline-offset-4">
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
         <button className="ml-5 px-5 py-2 rounded-full bg-brand-gold text-brand-navy font-heading font-bold drop-shadow-lg hover:bg-brand-accent-green transition">Login</button>
       </nav>
@@ -167,9 +178,9 @@ export default function Home() {
             We buy homes, condos, apartments, and multifamily properties, as-is, for cash.<br className="hidden md:block" />
             <span className="block mt-2 text-lg md:text-xl text-brand-gray font-body">No repairs. No commissions. No hassle. Get a fair, no-obligation offer and close on your timeline.</span>
           </h2>
-          <a className="inline-block px-8 py-3 mt-2 rounded-full bg-gradient-to-r from-brand-gold via-brand-accent-green to-brand-gold hover:from-brand-accent-green hover:to-brand-gold transition font-heading font-bold text-brand-navy text-lg shadow-xl" href="#">
+          <Link className="inline-block px-8 py-3 mt-2 rounded-full bg-gradient-to-r from-brand-gold via-brand-accent-green to-brand-gold hover:from-brand-accent-green hover:to-brand-gold transition font-heading font-bold text-brand-navy text-lg shadow-xl" href="#">
             Get My Cash Offer
-          </a>
+          </Link>
         </div>
       </section>
       <section className="relative z-10 max-w-5xl mx-auto px-6 pb-12">
